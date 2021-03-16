@@ -1,1 +1,3 @@
 # bootstrapping_without_retraining
+
+Something I occasionally see / hear about people doing in ML is taking a fixed ML model and a fixed test set, running the model over the test set to produce a set of probabilities, then "bootstrapping" this fixed set of probabilities \& labels to assess variance around their evaluation results. To me, this doesn't seem appropriate, as I think in many circumstances, this has only minimal dependence on the model M and data generative process D; however, I don't have the empirical or theoretical write-up / citation to support such a claim. This repo is a brief attempt to analyze this situation and determine if it has more or less dependence on on the model than anticipated.
